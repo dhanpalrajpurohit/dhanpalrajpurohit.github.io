@@ -32,12 +32,24 @@ const CONFIG = {
       header: 'My Projects',
       // To hide the `External Projects` section, keep it empty.
       projects: [
-        // {
-        //   title: '',
-        //   description:'',
-        //   imageUrl:'',
-        //   link: '',
-        // },
+        {
+          title: 'Ytubers',
+          description:'A web-application where youtubers can send the invite to other youtubers for collabration.',
+          imageUrl:'https://miro.medium.com/v2/resize:fit:828/format:webp/1*oSEaTHCA2--FyRDeILHRQw@2x.png',
+          link: 'https://youtubers-6o45.vercel.app/',
+        },
+        {
+          title: 'Text Share',
+          description:'A web-application where user send their text from computer to mobile device just with single scanner.',
+          imageUrl:'https://cdn.icon-icons.com/icons2/2018/PNG/512/friends_link_send_share_icon_123609.png',
+          link: 'https://text-share-rho.vercel.app/',
+        },
+        {
+          title: 'Youtube Clone',
+          description:'A YouTube clone with Google API is a web application that replicates YouTube's core functionalities, including video uploading, streaming, and searching. By integrating with Google's YouTube Data API, it enables users to search for videos, access video details, and manage playlists. This project delivers a scalable, feature-rich video-sharing experience using modern web technologies.',
+          imageUrl:'https://cdn-icons-png.flaticon.com/512/1384/1384060.png',
+          link: 'https://youtube-clone-nine-red.vercel.app/',
+        },
       ],
     },
   },
@@ -87,7 +99,7 @@ const CONFIG = {
     {
       company: 'LA Net Team Software Solution Surat',
       position: 'Full Stack Developer',
-      from: 'September 2021',
+      from: 'December 2021',
       to: 'Present',
       companyLink: '',
     },
@@ -100,7 +112,7 @@ const CONFIG = {
     },
     {
       company: 'Pixelbeget Lab',
-      position: 'Position',
+      position: 'Python Developer',
       from: 'June 2019',
       to: 'June 2020',
       companyLink: '',
