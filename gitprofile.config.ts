@@ -46,7 +46,7 @@ const CONFIG = {
         },
         {
           title: 'Youtube Clone',
-          description:'A YouTube clone with Google API is a web application that replicates YouTube's core functionalities, including video uploading, streaming, and searching. By integrating with Google's YouTube Data API, it enables users to search for videos, access video details, and manage playlists. This project delivers a scalable, feature-rich video-sharing experience using modern web technologies.',
+          description:"A YouTube clone with Google API is a web application that replicates YouTube's core functionalities, including video uploading, streaming, and searching. By integrating with Google's YouTube Data API, it enables users to search for videos, access video details, and manage playlists. This project delivers a scalable, feature-rich video-sharing experience using modern web technologies.",
           imageUrl:'https://cdn-icons-png.flaticon.com/512/1384/1384060.png',
           link: 'https://youtube-clone-nine-red.vercel.app/',
         },
