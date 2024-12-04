@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "Caslon540Regular";
+    src: url("/fonts/Caslon540Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Adobe Caslon Pro', sans-serif;
+  }
+  
+  .leftSection,
+  .rightSection {
+    flex: 1;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    
+  }
+  
+  /* Left Section */
+  .leftSection {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+     align-items: center;
+    justify-content: center;
+  }
+  
+  .profileImage {
+    width: 300px;
+    height: 300px;
+    border-radius: 0;
+    margin-bottom: 16px;
+    object-fit: cover;
+    border: 2px none #000000;
+  }
+  
+  .emailBtn {
+    margin: 16px 0;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    width:100%
+  }
+  
+  .button:hover {
+    background-color: #444444;
+  }
+
+  .pronouns {
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 16px;
+    color: #555555;
+  }
+  
+  /* Social Icons */
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+  }
+  
+  .icon {
+    font-size: 24px;
+    color: #000000;
+    cursor: pointer;
+  }
+  
+  .icon:hover {
+    color: #555555;
+  }
+  
+  /* Right Section */
+  .rightSection {
+    display: flex;
+    align-items: top;
+    justify-content: space-evenly;
+    text-align:left;
+    background-color: #e8e3de;
+    color: #000000;
+    padding: 0px 97px;
+  }
+
+  .rightSection .aboutMe{
+    margin-left: 0px;
+    font-size: 56px;
+  }
+
+  .rightSection .aboutMeText{
+    font-size: 18px;
+  }
+
+  .rightSection .btnResume{
+    width: 300px !important;
+    border-radius:0 !important;
+  }
+  
+  .rightSection h2 {
+    margin-bottom: 16px;
+  }
+  
+  .rightSection p {
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 960px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .leftSection,
+    .rightSection {
+      flex: none;
+      width: 100%;
+      height: auto;
+    }
+  }
+  

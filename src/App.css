@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    font-family: 'Adobe Caslon Pro', sans-serif;
+}
+@font-face {
+    font-family: "Caslon540Regular";
+    src: url("/fonts/Caslon540Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
