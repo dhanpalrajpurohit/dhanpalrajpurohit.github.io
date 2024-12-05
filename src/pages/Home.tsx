@@ -4,6 +4,8 @@ import XIcon from '@mui/icons-material/X';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import styles from "./styles.module.css"
 
+import profilePic from "../assets/profileImage.jpg"
+
 const Home = () => {
 
 
@@ -13,7 +15,7 @@ const Home = () => {
         <div className={styles.infoSection}>
           <img
             className={styles.profileImage}
-            src="src/assets/profileImage.jpg"
+            src={profilePic}
             alt="Profile"
           />
           <Typography variant="h4" component="h4">Dhanpal Singh</Typography>
