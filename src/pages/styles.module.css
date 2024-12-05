@@ -100,7 +100,7 @@
   }
 
   .rightSection .btnResume{
-    width: 300px !important;
+    width: 300px;
     border-radius:0 !important;
   }
   
@@ -117,13 +117,40 @@
   @media (max-width: 960px) {
     .container {
       flex-direction: column;
+      /* width: 100%; */
+      overflow-x: hidden;
     }
   
-    .leftSection,
-    .rightSection {
-      flex: none;
-      width: 100%;
+    .leftSection {
       height: auto;
+      padding: 186px 85px 186px;
+    }
+
+    .rightSection{
+      padding: 91px 22px 68px;
+    }
+
+    .leftSection img{
+      height: 150px;
+      width: 150px;
+    }
+
+    .infoSection{
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+    }
+
+    .rightSection .aboutMeText{
+      font-size: 32px;
+    }
+    .rightSection .aboutMeText{
+      font-size: 14px;
+    }
+
+    .btnResumeContainer .btnResume{
+      margin-top: 82px;
+      width: 150px;
     }
   }
   

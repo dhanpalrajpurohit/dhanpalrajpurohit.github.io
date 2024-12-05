@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className={styles.container}>
       <div className={styles.leftSection}>
-        <div>
+        <div className={styles.infoSection}>
           <img
             className={styles.profileImage}
             src="src/assets/profileImage.jpg"
@@ -48,8 +48,8 @@ const Home = () => {
             I am a highly skilled and tech-savvy professional with a Master's degree in Software Development, actively seeking a position as a Full-Stack Web Developer. With a strong passion for continuous learning and skill development, I have successfully contributed to a variety of projects, both independently and as part of a team.
           </Typography>
         </div>
-        <div className={styles.btnResume}>
-          <Button style={{ backgroundColor: "black", width: '300px', textTransform: 'none', borderRadius: 0 }} variant="contained"
+        <div className={styles.btnResumeContainer}>
+          <Button className={styles.btnResume} style={{ backgroundColor: "black", textTransform: 'none', borderRadius: 0 }} variant="contained"
             onClick={()=> window.open(
               "https://drive.google.com/file/d/1iPT5YJ-IBhPV7E6DNUOAsFHrEX-i7XAe/view", "_blank"
             )}
