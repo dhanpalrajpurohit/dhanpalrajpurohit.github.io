@@ -1,11 +1,7 @@
-@font-face {
-    font-family: "Caslon540Regular";
-    src: url("/fonts/Caslon540Regular.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-  body {
+body, body * {
+    font-family: 'Inter', sans-serif !important;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
