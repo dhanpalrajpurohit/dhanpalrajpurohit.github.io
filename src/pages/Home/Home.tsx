@@ -4,12 +4,17 @@ import XIcon from '@mui/icons-material/X';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import styles from "./styles.module.css"
 
-import profilePic from "../assets/profileImage.jpg"
+import profilePic from "../../assets/profileImage.jpg"
+import React from 'react';
+import Experience from '../Experience';
+import Projects from '../Projects';
+import Blogs from '../Blogs';
 
-const Home = () => {
+const Index = () => {
 
 
   return (
+    <React.Fragment>
     <div className={styles.container}>
       <div className={styles.leftSection}>
         <div className={styles.infoSection}>
@@ -65,7 +70,14 @@ const Home = () => {
 
       </div>
     </div>
+
+    <Experience/>
+
+    <Projects/>
+
+    <Blogs/>
+    </React.Fragment>
   )
 }
 
-export default Home
+export default Index

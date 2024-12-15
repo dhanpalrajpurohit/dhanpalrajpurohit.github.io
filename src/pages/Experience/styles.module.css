@@ -1,0 +1,53 @@
+.experienceContainer {
+    min-height: 100vh;
+    background: linear-gradient(to left,
+            #FAF9F8 0%,
+            #FAF9F8 75%,
+            #E8E3DE 75%,
+            #E8E3DE 100%);
+
+}
+
+.experienceWrapper {
+    display: flex;
+    margin-top: 65px;
+}
+
+.companyDetail {
+    padding-left: 50px;
+}
+
+.container {
+    padding: 90px;
+}
+
+.leftContainer {
+    padding: 90px 90px;
+}
+
+.experienceWrapper {}
+
+.experienceDate {
+    min-width: 20%;
+    text-align: right;
+    padding-right: 50px;
+    font-family: 'Inter';
+}
+
+.experienceTitle {
+    width: 20%;
+    text-align: right;
+    font-weight: 300;
+}
+
+.companyName {
+    font-weight: 200;
+    font-size: 20px;
+    margin: 5px 0px;
+}
+
+.expDetail {
+    font-weight: 200;
+    font-size: 18px;
+    margin: 5px 0px;
+}

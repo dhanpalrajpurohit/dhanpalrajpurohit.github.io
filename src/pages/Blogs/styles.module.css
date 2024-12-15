@@ -1,0 +1,59 @@
+.projectContainer {
+    min-height: auto;
+    background: linear-gradient(to top,
+            #E8E3DE 0%,
+            #E8E3DE 55%,
+            #FAF9F8 55%,
+            #FAF9F8 100%);
+    padding: 90px;
+}
+
+.pageTitle {
+    font-weight: 300;
+    font-size: 56px;
+}
+
+.projectTitle {
+    text-align: center;
+    font-size: 28px;
+    margin: 10px;
+}
+
+.projectDetailContainer {
+    padding: 90px 90px;
+}
+
+.projectDetailWrapper {
+    /* padding: 100px 100px; */
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.projects {
+    padding: 50px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.projectDesc {
+    width: 100%;
+    text-align: center;
+    min-height: 200px;
+    max-height: 200px;
+}
+
+.thumbnail {
+    height: 250px;
+    width: 250px;
+}
+
+.projectBtnWrap {
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    font-size: 18px;
+    font-weight: 200;
+}
