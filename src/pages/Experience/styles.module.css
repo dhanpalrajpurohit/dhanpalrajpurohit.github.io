@@ -1,42 +1,37 @@
 .experienceContainer {
     min-height: 100vh;
-    background: linear-gradient(to left,
+    /* background: linear-gradient(to left,
             #FAF9F8 0%,
             #FAF9F8 75%,
             #E8E3DE 75%,
-            #E8E3DE 100%);
+            #E8E3DE 100%); */
+    background-color: #E8E3DE;
+    padding: 70px 300px 0;
 
 }
 
 .experienceWrapper {
     display: flex;
     margin-top: 65px;
+    gap: 32px;
 }
 
 .companyDetail {
-    padding-left: 50px;
+    min-width: 30%;
 }
 
-.container {
-    padding: 90px;
-}
-
-.leftContainer {
+.wrapperContainer {
     padding: 90px 90px;
 }
 
-.experienceWrapper {}
-
 .experienceDate {
-    min-width: 20%;
-    text-align: right;
-    padding-right: 50px;
+    min-width: 30%;
+    text-align: left;
     font-family: 'Inter';
 }
 
 .experienceTitle {
-    width: 20%;
-    text-align: right;
+    text-align: left;
     font-weight: 300;
 }
 
@@ -50,4 +45,24 @@
     font-weight: 200;
     font-size: 18px;
     margin: 5px 0px;
+}
+
+@media (max-width: 960px) {
+    .experienceContainer{
+        padding: 30px;
+    }
+
+    .wrapperContainer {
+        padding: 30px;
+    }
+
+    .experienceTitle {
+        text-align: left;
+        font-weight: 300;
+        font-size: 18px !important;
+    }
+
+    .experienceDate h5, .companyDetail h5, p{
+        font-size: 16px !important;
+    }
 }

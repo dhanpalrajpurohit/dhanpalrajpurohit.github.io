@@ -4,6 +4,7 @@
     flex-direction: row;
     width: 100vw;
     height: 100vh;
+    background-color: #e8e3de;
   }
   
   .leftSection,
@@ -13,14 +14,12 @@
     padding: 32px;
     display: flex;
     flex-direction: column;
-    /* align-items: center;
-    justify-content: center; */
     
   }
   
   /* Left Section */
   .leftSection {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     color: #000000;
     text-align: center;
      align-items: center;

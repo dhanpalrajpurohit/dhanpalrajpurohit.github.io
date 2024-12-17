@@ -3,8 +3,8 @@ import styles from './styles.module.css';
 
 const Experience = () => {
     return (
-        <div className={styles.experienceContainer}>
-            <Box className={styles.leftContainer}>
+        <div className={styles.experienceContainer} id="experience">
+            <Box className={styles.wrapperContainer}>
                 <Typography component='h2' variant='h2' className={styles.experienceTitle}>
                     WORK EXPERIENCE
                 </Typography>
@@ -18,7 +18,7 @@ const Experience = () => {
                         <div className={styles.companyDetail}>
                             <Typography component="h5" variant='h5'>Full Stack Web Developer</Typography>
                             <p className={styles.companyName}>LA NET Team Solution Pvt Ltd, Surat </p>
-                            <p className={styles.expDetail}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <p className={styles.expDetail}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         </div>
                     </div>
 
@@ -31,7 +31,7 @@ const Experience = () => {
                         <div className={styles.companyDetail}>
                             <Typography component="h5" variant='h5'>MERN Developer</Typography>
                             <p className={styles.companyName}>IT Futurz Solution, Surat</p>
-                            <p className={styles.expDetail}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <p className={styles.expDetail}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         </div>
                     </div>
 
@@ -44,7 +44,7 @@ const Experience = () => {
                         <div className={styles.companyDetail}>
                             <Typography component="h5" variant='h5'>Python Developer</Typography>
                             <p className={styles.companyName}>Pixel Beget Pvt Ltd, Delhi </p>
-                            <p className={styles.expDetail}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <p className={styles.expDetail}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         </div>
                     </div>
                 </div>
