@@ -7,8 +7,8 @@ import styles from "./styles.module.css"
 import profilePic from "../../assets/profileImage.jpg"
 import React from 'react';
 import Experience from '../Experience';
-import Projects from '../Projects';
-import Blogs from '../Blogs';
+// import Projects from '../Projects';
+// import Blogs from '../Blogs';
 
 import Header from "../../components/Header";
 
