@@ -2,17 +2,23 @@ import styles from './styles.module.css'
 
 
 const index = () => {
-  const scrollToSection = (id) => {
-
+  const scrollToSection = (id: string): void => {
     const element = document.getElementById(id);
-    const offset = window.innerHeight / 2 - element.offsetHeight / 2;
+    if (!element) {
+      console.error(`Element with id ${id} not found.`);
+      return;
+    }
 
+    const offset = window.innerHeight / 2 - element.offsetHeight / 2;
     element.scrollIntoView({
       behavior: "smooth",
-      top: element.offsetTop - offset,
+      block: "start",
       inline: "nearest",
     });
-
+    window.scrollTo({
+      top: element.offsetTop - offset,
+      behavior: "smooth",
+    });
   };
   return (
     <header className={styles.header}>
