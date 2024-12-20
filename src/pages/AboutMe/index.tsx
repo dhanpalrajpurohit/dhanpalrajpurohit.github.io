@@ -1,4 +1,3 @@
-import React from 'react';
 import { Button, IconButton, Typography } from '@mui/material'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import XIcon from '@mui/icons-material/X';
