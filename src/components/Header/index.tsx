@@ -21,16 +21,16 @@ const index = () => {
     });
   };
   return (
-    <header className={styles.header}>
+    <div className={styles.header}>
       <nav>
         <ul className={styles.navList}>
           <li className={styles.navItem}><a onClick={() => scrollToSection("about-me")}>About Me</a></li>
           <li className={styles.navItem}><a onClick={() => scrollToSection("experience")}>Experience</a></li>
+          <li className={styles.navItem}><a onClick={() => scrollToSection("projects")}>Projects</a></li>
           <li className={styles.navItem}><a onClick={() => scrollToSection("blog")}>Blog</a></li>
-          <li className={styles.navItem}><a onClick={() => scrollToSection("project")}>Project</a></li>
         </ul>
       </nav>
-    </header>
+    </div>
   )
 }
 

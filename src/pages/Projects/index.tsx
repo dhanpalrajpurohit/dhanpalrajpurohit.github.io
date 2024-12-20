@@ -4,6 +4,7 @@ import { Typography, Button } from '@mui/material';
 const Projects = () => {
     return (
         <div className={styles.projectContainer}>
+        <div id="projects">
             <div className={styles.pageTitle}>
                 <Typography component='h2' variant='h2' className={styles.pageTitle}>
                     PROJECTS
@@ -92,6 +93,7 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }
