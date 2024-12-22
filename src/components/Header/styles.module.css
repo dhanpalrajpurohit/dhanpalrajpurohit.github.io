@@ -22,6 +22,10 @@
     padding: 0;
   }
 
+  #home{
+    display: none;
+  }
+
   .navItem {
     font-size: 18px;
     font-weight: lighter;
@@ -47,7 +51,7 @@
 
 
   /* Responsive styles */
-  @media (max-width: 768px) {
+  @media (max-width: 960px) {
     .navList {
       flex-direction: row;
       gap: 8px;
@@ -60,5 +64,11 @@
 
     .header {
       padding: 5px 0;
+    }
+    #home{
+      display: block;
+    }
+    #webAboutMe{
+      display: none;
     }
   }

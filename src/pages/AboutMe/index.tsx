@@ -2,16 +2,17 @@ import { Button, IconButton, Typography } from '@mui/material'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import XIcon from '@mui/icons-material/X';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import styles from "./styles.module.css"
 
-import profilePic from "../../assets/profileImage.jpg"
+import styles from "./styles.module.css";
+
+import profilePic from "../../assets/profileImage.jpg";
 import Scroll from '../../components/Scroll';
 
 const index = () => {
     return (
         <div className={styles.container} id="about-me">
             <div className={styles.containerWrapper}>
-                <div className={styles.leftSection}>
+                <section className={styles.leftSection} id="home">
                     <div className={styles.infoSection}>
                         <img
                             className={styles.profileImage}
@@ -41,9 +42,9 @@ const index = () => {
 
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div className={styles.rightSection}>
+                <section className={styles.rightSection} id="aboutMe">
 
                     <div className={styles.aboutMeText}>
                         <Typography variant="h2" component="h2" className={styles.aboutMe}>ABOUT ME</Typography>
@@ -63,7 +64,7 @@ const index = () => {
                         >Resume</Button>
                     </div>
 
-                </div>
+                </section>
             </div>
             <Scroll />
         </div>

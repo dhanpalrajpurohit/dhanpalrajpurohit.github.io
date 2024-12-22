@@ -21,7 +21,7 @@
 }
 
 .wrapperContainer {
-    padding: 90px 90px;
+    padding: 90px;
 }
 
 .experienceDate {
@@ -53,16 +53,22 @@
     }
 
     .wrapperContainer {
-        padding: 30px;
+        padding: 80px 0 0;
     }
 
     .experienceTitle {
         text-align: left;
         font-weight: 300;
-        font-size: 18px !important;
+        font-size: 32px !important;
     }
 
     .experienceDate h5, .companyDetail h5, p{
         font-size: 16px !important;
+        font-weight: 400;
+    }
+
+    .expDetail {
+        font-size: 14px !important;
+        margin: 5px 0px;
     }
 }
