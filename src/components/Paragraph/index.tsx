@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const index = ({ text, maxLength = 100 }: { text: string, maxLength: number }) => {
     const [isExpanded, setIsExpanded] = useState(false);
