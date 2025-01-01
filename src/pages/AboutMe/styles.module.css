@@ -125,7 +125,8 @@
     }
 
     .rightSection {
-        padding: 186px 0px 186px;
+        height: auto;
+        padding: 0px;
     }
 
     .leftSection img {

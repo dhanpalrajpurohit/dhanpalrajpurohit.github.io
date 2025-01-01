@@ -1,7 +1,7 @@
 import React from 'react';
 import AboutMe from '../AboutMe';
 import Experience from '../Experience';
-// import Projects from '../Projects';
+import Projects from '../Projects';
 // import Blogs from '../Blogs';
 
 import Header from "../../components/Header";
@@ -15,7 +15,7 @@ const Index = () => {
       <AboutMe />
       <Experience />
 
-      {/* <Projects/> */}
+      <Projects/>
 
       {/* <Blogs/> */}
     </React.Fragment>
