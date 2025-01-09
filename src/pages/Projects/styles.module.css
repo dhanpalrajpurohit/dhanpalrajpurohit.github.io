@@ -10,7 +10,7 @@
     min-height: 100vh;
 }
 
-.projectWrapper{
+.projectWrapper {
     padding: 80px;
     min-height: 100vh;
 }
@@ -23,7 +23,7 @@
 .projectTitle {
     text-align: center;
     font-size: 28px;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 .projectDetailContainer {
@@ -38,14 +38,21 @@
 }
 
 .projects {
-    padding: 50px;
     max-width: 250px;
     text-align: center;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
 }
 
 .projectDesc {
     width: 100%;
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column
 }
 
 .thumbnail {
@@ -56,43 +63,67 @@
 .projectBtnWrap {
     display: flex;
     justify-content: space-between;
+    bottom: 0;
+    position: absolute;
+    gap: 16px;
+    margin-bottom: 10px;
 }
 
 .description {
     font-size: 18px;
     font-weight: 200;
+    min-height: 150px;
+}
+
+.projectBtn {
+    background-color: black !important;
+    text-transform: 'none';
+    border-radius: 12px !important;
 }
 
 
 @media (max-width: 960px) {
-    .projectContainer{
+    .projectContainer {
         padding: 0;
     }
+
     .pageTitle {
         font-weight: 300;
         font-size: 32px !important;
         padding: 20px;
     }
-    .projectDetailContainer{
+
+    .projectDetailContainer {
         padding: 0;
     }
 
-    .projectWrapper{
+    .projectWrapper {
         padding: 0;
+        /* display: flex; */
+        padding-top: 50%;
     }
-    .projects{
-        margin:auto;
+
+    .projects {
+        margin: auto;
     }
 
     .thumbnail {
         height: 150px;
         width: 150px;
     }
+
     .description {
         font-size: 12px;
         font-weight: 200;
     }
-    .projectBtnWrap button{
+
+    .projectBtnWrap button {
         font-size: 12px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .projectDesc {
+        align-items: center;
     }
 }
