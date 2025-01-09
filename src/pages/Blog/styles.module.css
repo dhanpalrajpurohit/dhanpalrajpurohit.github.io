@@ -62,10 +62,12 @@
 
 .projectBtnWrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     bottom: 0;
     position: absolute;
-    gap: 16px;
+    /* gap: 16px; */
+    width: 100%;
 }
 
 .description {
