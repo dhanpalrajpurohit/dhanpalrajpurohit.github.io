@@ -1,165 +1,120 @@
 .container {
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     background-color: #e8e3de;
-    /* margin: 68px 0 0; */
-}
-
-.containerWrapper {
     display: flex;
-    flex-direction: row;
-    padding: 90px;
-    /* min-height: 100vh; */
-    /* width: 100vw;
-    background-color: #e8e3de; */
-}
-
-.leftSection,
-.rightSection {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .containerWrapper {
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .leftSection,
+  .rightSection {
     font-family: 'Inter', sans-serif !important;
-    flex: 1;
     padding: 32px;
     display: flex;
     flex-direction: column;
-
-}
-
-/* Left Section */
-.leftSection {
-    /* background-color: #ffffff; */
-    color: #000000;
+    justify-content: center;
+  }
+  
+  /* Left Section */
+  .leftSection {
     text-align: center;
     align-items: center;
     justify-content: center;
-}
-
-.profileImage {
-    width: 250px;
-    height: 250px;
-    border-radius: 0;
-    margin-bottom: 16px;
+  }
+  
+  .photoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profileImage {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
     object-fit: cover;
     border: 2px none #000000;
-}
-
-.emailBtn {
-    margin: 16px 0;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    width: 100%
-}
-
-.button:hover {
-    background-color: #444444;
-}
-
-/* Social Icons */
-.socialIcons {
+    margin-bottom: 20px;
+  }
+  
+  .profileName {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  
+  /* Social Icons */
+  .socialIcons {
     display: flex;
-    justify-content: center;
     gap: 16px;
     margin-top: 16px;
-}
-
-.icon {
-    font-size: 24px;
-    color: #000000;
-    cursor: pointer;
-}
-
-.icon:hover {
-    color: #555555;
-}
-
-/* Right Section */
-.rightSection {
-    display: flex;
-    align-items: top;
-    justify-content: space-evenly;
+    justify-content: center;
+  }
+  
+  /* Right Section */
+  .rightSection {
     text-align: left;
     background-color: #e8e3de;
     color: #000000;
-    padding: 0px 97px;
-}
-
-.rightSection .aboutMe {
-    font-weight: 300;
-    margin-left: 0px;
-    font-size: 56px;
-}
-
-.rightSection .aboutMeText {
-    font-weight: 200;
-    font-size: 18px;
-}
-
-.rightSection .btnResume {
+    justify-content: flex-start; /* changed to flex-start */
+  }
+  
+  .summaryText {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .rightSection .btnResume {
     width: 300px;
     border-radius: 0 !important;
-}
-
-.rightSection h2 {
-    margin-bottom: 16px;
-}
-
-.rightSection p {
-    line-height: 1.6;
-    margin-bottom: 16px;
-}
-
-/* Responsive Layout */
-@media (max-width: 960px) {
-    .container {
-        margin: 0;
-    }
-    .containerWrapper {
-        flex-direction: column;
-        padding: 30px;
-        overflow-x: hidden;
-    }
-
-    .leftSection {
-        height: auto;
-        /* padding: 186px 85px 186px; */
-    }
-
+    margin-top: 20px;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 960px) {
+    .leftSection,
     .rightSection {
-        height: auto;
-        padding: 0px;
+      padding: 20px;
     }
-
-    .leftSection img {
-        height: 150px;
-        width: 150px;
+  
+    .profileImage {
+      width: 200px;
+      height: 200px;
     }
-
-    .infoSection {
-        margin: 0;
-        padding: 0;
-        font-size: 14px;
+  
+    .profileName {
+      font-size: 1.2rem;
     }
-
-    .rightSection .aboutMeText h2 {
-        font-size: 32px;
+  
+    .summaryText {
+      font-size: 14px;
     }
-
-    .rightSection .aboutMeText p {
-        font-size: 16px;
+  
+    .btnResume {
+      width: 200px;
     }
-
-    .btnResumeContainer .btnResume {
-        margin-top: 82px;
-        width: 150px;
+  }
+  
+  @media (max-width: 600px) {
+    .profileImage {
+      width: 150px;
+      height: 150px;
     }
-
-    .infoSection h4 {
-        font-size: 20px;
-        font-weight: 400;
+  
+    .profileName {
+      font-size: 1rem;
     }
-
-    .infoSection h6 {
-        font-size: 18px;
-        font-weight: 400;
+  
+    .summaryText {
+      font-size: 12px;
     }
-}
+  
+    .btnResume {
+      width: 150px;
+    }
+  }

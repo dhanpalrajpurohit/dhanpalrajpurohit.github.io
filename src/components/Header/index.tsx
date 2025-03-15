@@ -1,41 +1,63 @@
-import styles from './styles.module.css'
+import { useState } from "react";
 
+const Index = () => {
+  const [activeTab, setActiveTab] = useState("");
 
-const index = () => {
   const scrollToSection = (id: string): void => {
     const element = document.getElementById(id);
     if (!element) {
       console.error(`Element with id ${id} not found.`);
       return;
     }
-
+  
+    setActiveTab(id);
+  
     const offset = window.innerHeight / 2 - element.offsetHeight / 2;
-
+  
     element.scrollIntoView({
       behavior: "smooth",
       block: "start",
       inline: "nearest",
     });
-
+  
     window.scrollTo({
       top: element.offsetTop - offset,
       behavior: "smooth",
     });
   };
+
   return (
-    <div className={styles.header}>
-      <nav>
-        <ul className={styles.navList}>
-          <li className={styles.navItem} id={styles.home}><a onClick={() => scrollToSection("home")}>Home</a></li>
-          <li className={styles.navItem} id={styles.home}><a onClick={() => scrollToSection("aboutMe")}>About Me</a></li>
-          <li className={styles.navItem} id={styles.webAboutMe}><a onClick={() => scrollToSection("about-me")}>About Me</a></li>
-          <li className={styles.navItem}><a onClick={() => scrollToSection("experience")}>Experience</a></li>
-          <li className={styles.navItem}><a onClick={() => scrollToSection("projects")}>Projects</a></li>
-          <li className={styles.navItem}><a onClick={() => scrollToSection("blog")}>Blog</a></li>
+    <div className="bg-white fixed top-0 left-0 w-full z-50 py-4 min-w-[320px] max-w-full shadow-md">
+      <nav className="flex justify-center items-center w-full">
+        <ul className="flex list-none p-0 text-base md:text-xs">
+          {[
+            { id: "home", label: "Home", hiddenOnMobile: true },
+            { id: "home", label: "About Me", hiddenOnDesktop: true },
+            // { id: "about-me", label: "About Me", hiddenOnMobile: true },
+            { id: "experience", label: "Experience" },
+            { id: "projects", label: "Projects" },
+            { id: "blogs", label: "Blog" },
+          ].map(({ id, label, hiddenOnMobile, hiddenOnDesktop }) => (
+            <li
+              key={id}
+              className={`${hiddenOnMobile ? "hidden md:block" : ""} ${hiddenOnDesktop ? "md:hidden" : ""}`}
+            >
+              <a
+                className={`block px-4 py-2 transition-colors duration-300 rounded-lg font-light ${
+                  activeTab === id
+                    ? "bg-black text-white"
+                    : "text-gray-800 hover:bg-black hover:text-white"
+                }`}
+                onClick={() => scrollToSection(id)}
+              >
+                {label}
+              </a>
+            </li>
+          ))}
         </ul>
       </nav>
     </div>
-  )
-}
+  );
+};
 
-export default index
+export default Index;

@@ -2,9 +2,10 @@ import React from 'react';
 import AboutMe from '../AboutMe';
 import Experience from '../Experience';
 import Projects from '../Projects';
-import Blogs from '../Blog';
+import Blogs from '../Blogs';
 
 import Header from "../../components/Header";
+import Footer from '../Footer';
 
 const Index = () => {
 
@@ -16,6 +17,7 @@ const Index = () => {
       <Experience />
       <Projects/>
       <Blogs/>
+      <Footer/>
     </React.Fragment>
   )
 }
