@@ -6,8 +6,8 @@ import "swiper/css/autoplay";
 
 const Blogs = () => {
   return (
-    <section id="blogs" className="w-full bg-[#E8E3DE] flex justify-center items-center p-8 md:p-20">
-      <div className="w-full max-w-6xl">
+    <section id="blogs" className="w-full min-h-screen bg-[#E8E3DE] flex justify-center items-center p-8 md:p-20">
+      <div className="w-full max-w-5xl">
         {/* Heading */}
         <h2 className="text-left text-4xl md:text-5xl font-bold uppercase tracking-wide mb-10">
           Latest Blogs
@@ -54,12 +54,12 @@ const Blogs = () => {
               },
             ].map((blog, index) => (
               <SwiperSlide key={index} className="flex justify-center">
-                <div className="w-80 min-h-[380px] bg-white shadow-lg p-6 flex flex-col items-center rounded-lg">
+                <div className="w-80 min-h-[380px] bg-white shadow-lg p-6 flex flex-col items-center">
                   {/* Thumbnail Image */}
                   <img
                     src={blog.image}
                     alt={blog.title}
-                    className="w-full h-40 object-cover rounded-md"
+                    className="w-full h-40 object-cover"
                   />
 
                   {/* Title */}
@@ -70,7 +70,7 @@ const Blogs = () => {
 
                   {/* Read More Button */}
                   <div className="w-full mt-auto">
-                    <button className="w-full bg-black text-white py-2 px-4 rounded-md text-sm">
+                    <button className="w-full bg-black text-white py-2 px-4 text-sm">
                       Read More
                     </button>
                   </div>

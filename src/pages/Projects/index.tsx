@@ -10,8 +10,8 @@ import NoteSVG from "../../components/SVG/NoteSVG";
 
 const Projects = () => {
   return (
-    <section id="projects" className="w-full bg-[#E8E3DE] flex justify-center items-center p-8 md:p-20">
-      <div className="w-full max-w-6xl">
+    <section id="projects" className="w-full min-h-screen bg-[#E8E3DE] flex justify-center items-center px-8 md:px-20 py-20">
+      <div className="w-full max-w-5xl">
         {/* Heading */}
         <h2 className="text-left text-4xl md:text-5xl font-bold uppercase tracking-wide mb-10">
           Projects
@@ -67,7 +67,7 @@ const Projects = () => {
               },
             ].map((project, index) => (
               <SwiperSlide key={index} className="flex justify-center">
-                <div className="w-80 min-h-[380px] bg-white shadow-lg p-6 flex flex-col items-center rounded-lg">
+                <div className="w-76 min-h-[380px] bg-white shadow-lg p-6 flex flex-col items-center">
                   {/* Icon */}
                   <div className="mb-4">{project.icon}</div>
 
@@ -83,7 +83,7 @@ const Projects = () => {
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-black text-white py-2 px-4 rounded-md text-sm"
+                      className="bg-black text-white py-2 px-4 text-sm"
                     >
                       Demo Link
                     </a>
@@ -91,7 +91,7 @@ const Projects = () => {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-black text-white py-2 px-4 rounded-md text-sm"
+                      className="bg-black text-white py-2 px-4 text-sm"
                     >
                       GitHub
                     </a>
