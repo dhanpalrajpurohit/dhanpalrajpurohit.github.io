@@ -12,8 +12,8 @@ const Experience = () => {
                 <div className="text-left text-black flex flex-col justify-start p-8 gap-10">
                     {/* Experience 1 */}
                     <div className="flex flex-col md:flex-row items-start gap-8">
-                        <div className="w-full md:w-1/3 text-left">
-                            <h5 className="text-lg hidden sm:hidden md:block font-semibold">
+                        <div className="w-full md:w-1/3 text-left hidden sm:hidden md:block">
+                            <h5 className="text-lg font-semibold">
                                 Dec 2021 - Present
                             </h5>
                         </div>
@@ -29,8 +29,8 @@ const Experience = () => {
 
                     {/* Experience 2 */}
                     <div className="flex flex-col md:flex-row items-start gap-8">
-                        <div className="w-full md:w-1/3 text-left">
-                            <h5 className="text-lg hidden sm:hidden md:block font-semibold">July 2020 - Dec 2020</h5>
+                        <div className="w-full md:w-1/3 text-left hidden sm:hidden md:block">
+                            <h5 className="text-lg font-semibold">July 2020 - Dec 2020</h5>
                         </div>
                         <div className="w-full md:w-2/3">
                             <h5 className="text-xl font-semibold">Backend Developer</h5>
@@ -42,8 +42,8 @@ const Experience = () => {
 
                     {/* Experience 3 */}
                     <div className="flex flex-col md:flex-row items-start gap-8">
-                        <div className="w-full md:w-1/3 text-left">
-                            <h5 className="text-lg hidden sm:hidden md:block font-semibold">June 2019 - June 2020</h5>
+                        <div className="w-full md:w-1/3 text-left hidden sm:hidden md:block">
+                            <h5 className="text-lg font-semibold">June 2019 - June 2020</h5>
                         </div>
                         <div className="w-full md:w-2/3">
                             <h5 className="text-xl font-semibold">Python Developer</h5>
