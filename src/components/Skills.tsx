@@ -16,7 +16,6 @@ import {
   SiFastapi,
   SiPostgresql,
   SiDocker,
-  SiAmazonaws,
   SiFlask,
 } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
