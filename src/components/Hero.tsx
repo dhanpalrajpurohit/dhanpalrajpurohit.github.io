@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Container from "./Container";
+import profileImage from "../assets/profileImage.jpg"
 
 const Hero: React.FC = () => {
   return (
@@ -60,7 +61,7 @@ const Hero: React.FC = () => {
         >
           <div className="w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 relative rounded-full overflow-hidden shadow-2xl border-[6px] sm:border-[8px] border-white mx-auto md:mx-0">
             <img
-              src="https://dhanpalrajpurohit.vercel.app/assets/profileImage-CneR84hj.jpg"
+              src={profileImage}
               alt="Dhanpal Singh"
               className="w-full h-full object-cover"
             />
