@@ -10,7 +10,7 @@ const ContactSection: React.FC = () => {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
         <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-          Contact Us
+          Let’s Build Something Together
         </h2>
 
         <div className="grid lg:grid-cols-2 gap-10 bg-white rounded-2xl shadow-xl p-6 sm:p-10">

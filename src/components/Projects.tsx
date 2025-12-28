@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Github, ExternalLink } from "lucide-react";
+import { ArrowRight, Github } from "lucide-react";
 
 interface Project {
   title: string;
@@ -13,28 +13,25 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Note Sharing",
-    desc: "Effortlessly create, organize, and share notes online with a sleek, user-friendly note-sharing web application.",
+    title: "Note Sharing Platform",
+    desc: "Create, organize, and share notes securely with role-based access and cloud-ready APIs.",
     tech: ["React", "Django", "PostgreSQL"],
-    demo: "#",
     github: "https://github.com/dhanpalrajpurohit/note_sharing_app",
     image:
       "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=900&q=60",
   },
   {
-    title: "Attendance System",
-    desc: "A PyQt-based attendance system enabling efficient tracking, management, and reporting of attendance with an intuitive user interface.",
+    title: "Attendance Management System",
+    desc: "Desktop-based attendance tracking system with reporting and export features.",
     tech: ["Python", "PyQt", "SQLite"],
-    demo: "#",
     github: "#",
     image:
       "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=60",
   },
   {
     title: "YouTube Clone",
-    desc: "A web-based YouTube clone utilizing the YouTube Data API V3 for video searching, playback, and channel browsing.",
+    desc: "Video search and playback platform using YouTube Data API with modern UI.",
     tech: ["React", "YouTube API", "TailwindCSS"],
-    demo: "#",
     github: "https://github.com/dhanpalrajpurohit/youtube-clone",
     image:
       "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=60",
@@ -43,57 +40,64 @@ const projects: Project[] = [
 
 const Projects: React.FC = () => {
   return (
-    <section id="projects" className="py-24 bg-white">
-      <div className="max-w-6xl mx-auto px-6 md:px-8">
-        {/* Section Title */}
+    <section id="projects" className="py-20 bg-white">
+      <div className="max-w-6xl mx-auto px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl font-extrabold text-center text-gray-900 mb-12"
+          className="text-3xl md:text-4xl font-extrabold text-center mb-14"
         >
           Featured <span className="text-blue-600">Projects</span>
         </motion.h2>
 
-        {/* Projects Grid */}
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-8">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((p, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 40 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               viewport={{ once: true }}
-              className="group relative overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-500"
+              className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition"
             >
-              {/* Project Image */}
+              {/* Image */}
               <img
                 src={p.image}
                 alt={p.title}
-                className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-700"
+                className="h-48 w-full object-cover"
               />
 
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-blue-600/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-center text-white p-6">
-                <h3 className="text-xl font-semibold mb-2">{p.title}</h3>
-                <p className="text-sm opacity-90 mb-3">{p.desc}</p>
-                <div className="flex gap-4 mt-2">
-                  <a
-                    href={p.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-white/10 hover:bg-white/20 text-sm px-4 py-2 rounded-full transition"
-                  >
-                    <ExternalLink size={16} /> Demo
-                  </a>
+              {/* Content */}
+              <div className="p-6">
+                <h3 className="text-lg font-semibold mb-2">{p.title}</h3>
+                <p className="text-sm text-gray-600 mb-4">{p.desc}</p>
+
+                {/* Tech tags */}
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {p.tech.map((t, idx) => (
+                    <span
+                      key={idx}
+                      className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Actions */}
+                <div className="flex items-center gap-4">
                   <a
                     href={p.github}
                     target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-white/10 hover:bg-white/20 text-sm px-4 py-2 rounded-full transition"
+                    className="flex items-center gap-2 text-sm text-gray-700 hover:text-black"
                   >
                     <Github size={16} /> GitHub
                   </a>
+
+                  <span className="flex items-center gap-1 text-sm text-blue-600 font-medium">
+                    Learn more <ArrowRight size={14} />
+                  </span>
                 </div>
               </div>
             </motion.div>

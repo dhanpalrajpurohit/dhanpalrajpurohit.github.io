@@ -1,104 +1,118 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Github, Linkedin } from "lucide-react";
 import Container from "./Container";
-import profileImage from "../assets/profileImage.jpg"
+import profileImage from "../assets/profileImage.jpg";
 
 const Hero: React.FC = () => {
+  const handleScroll = () => {
+    const el = document.getElementById("experience");
+    if (!el) return;
+
+    const y = el.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({ top: y, behavior: "smooth" });
+  };
+
   return (
-    <section
-    id="home"
-    className="relative min-h-[100vh] flex items-center justify-center bg-[#f8fafc] overflow-hidden text-gray-900"
-  >
-      <Container className="flex flex-col-reverse md:flex-row items-center justify-between gap-10 md:gap-16">
-        {/* Left Text Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          className="max-w-xl text-center md:text-left"
-        >
-          {/* Title */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-snug md:leading-tight mb-4">
-            Hello Mate 👋 <br />
-            I’m{" "}
-            <span className="text-blue-600">Dhanpal</span>
-            <br /> a{" "}
-            <span className="text-blue-600">Software Developer</span>
-          </h1>
+    <section id="home" className="bg-[#f8fafc] text-gray-900 overflow-hidden">
+      <Container className="min-h-[85vh] flex items-center py-20">
 
-          {/* Subtext */}
-          <p className="text-gray-600 text-base sm:text-lg md:text-[17px] mb-8 leading-relaxed">
-            I’m a developer with over 3 years of experience specializing in
-            Django, FastAPI, and React. I build scalable backend systems and
-            beautiful frontends — passionate about clean code and cloud
-            deployment.
-          </p>
+        <div className="w-full flex flex-col-reverse md:flex-row items-center gap-14">
 
-          {/* CTA Buttons */}
-          <div className="flex flex-wrap justify-center md:justify-start gap-4">
-            <a
-              href="#projects"
-              className="bg-blue-600 text-white px-6 sm:px-7 py-2.5 sm:py-3 rounded-full font-medium hover:bg-blue-700 transition-all duration-300 shadow-md text-sm sm:text-base"
+          {/* LEFT CONTENT */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            className="flex-1 text-center md:text-left"
+          >
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-5">
+              Hello Mate 👋 <br />
+              I’m <span className="text-blue-600">Dhanpal</span>
+              <br />
+              <span className="text-blue-600">
+                Software Engineer
+              </span>
+            </h1>
+
+            <p className="text-gray-600 text-base lg:text-lg max-w-xl mb-8">
+              full-stack engineer with 4+ years of experience
+              building scalable systems and cloud-native applications
+              using Python, Django, FastAPI, and AWS.
+            </p>
+
+            {/* CTA */}
+            <div className="flex gap-6 justify-center md:justify-start mb-10">
+              <a
+                href="#contact"
+                className="bg-blue-600 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-700 transition shadow-md text-center"
+              >
+                Hire Me
+              </a>
+
+              <a
+                href="#projects"
+                className="border border-blue-600 text-blue-600 px-8 py-3 rounded-full font-medium hover:bg-blue-50 transition text-center"
+              >
+                View Case Studies
+              </a>
+            </div>
+
+            {/* SOCIAL */}
+            <div className="flex gap-6 justify-center md:justify-start mb-10">
+              <a
+                href="https://linkedin.com/in/YOUR-LINKEDIN"
+                target="_blank"
+                className="flex items-center gap-2 text-gray-600 hover:text-blue-600"
+              >
+                <Linkedin size={18} /> LinkedIn
+              </a>
+
+              <a
+                href="https://github.com/YOUR-GITHUB"
+                target="_blank"
+                className="flex items-center gap-2 text-gray-600 hover:text-gray-900"
+              >
+                <Github size={18} /> GitHub
+              </a>
+            </div>
+
+            {/* SCROLL */}
+            {/* <button
+              onClick={handleScroll}
+              className="hidden md:flex items-center gap-2 text-sm text-gray-500 hover:text-blue-600 transition"
             >
-              View Projects
-            </a>
-            <a
-              href="https://drive.google.com/file/d/1iPT5YJ-IBhPV7E6DNUOAsFHrEX-i7XAe/view"
-              className="border-2 border-blue-600 text-blue-600 px-6 sm:px-7 py-2.5 sm:py-3 rounded-full font-medium hover:bg-blue-50 transition-all duration-300 text-sm sm:text-base"
-              target="_blank"
-            >
-              Download CV
-            </a>
-          </div>
-        </motion.div>
+              <span className="w-9 h-9 rounded-full border-2 border-blue-500 flex items-center justify-center">
+                ↓
+              </span>
+              Scroll to explore
+            </button> */}
+          </motion.div>
 
-        {/* Right Image Section */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative"
-        >
-          <div className="w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 relative rounded-full overflow-hidden shadow-2xl border-[6px] sm:border-[8px] border-white mx-auto md:mx-0">
-            <img
-              src={profileImage}
-              alt="Dhanpal Singh"
-              className="w-full h-full object-cover"
-            />
-          </div>
+          {/* RIGHT IMAGE */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="flex-1 flex justify-center"
+          >
+            <div className="relative">
+              <div className="w-56 h-56 sm:w-72 sm:h-72 lg:w-96 lg:h-96 rounded-full overflow-hidden border-[6px] border-white shadow-2xl">
+                <img
+                  src={profileImage}
+                  alt="Dhanpal Singh"
+                  className="w-full h-full object-cover"
+                />
+              </div>
 
-          {/* Floating Accent Circles */}
-          <div className="absolute -top-6 -left-6 w-16 h-16 sm:w-20 sm:h-20 bg-blue-100 rounded-full blur-2xl opacity-60"></div>
-          <div className="absolute bottom-0 -right-6 sm:-right-8 w-20 h-20 sm:w-24 sm:h-24 bg-blue-50 rounded-full blur-3xl opacity-60"></div>
-        </motion.div>
+              {/* Decorative accents */}
+              <div className="absolute -top-8 -left-8 w-28 h-28 bg-blue-100 rounded-full blur-3xl opacity-60" />
+              <div className="absolute bottom-0 -right-10 w-32 h-32 bg-blue-50 rounded-full blur-3xl opacity-60" />
+            </div>
+          </motion.div>
+
+        </div>
       </Container>
-      <motion.button
-  onClick={() =>
-    document.getElementById("experience")?.scrollIntoView({ behavior: "smooth" })
-  }
-  whileHover={{ scale: 1.1 }}
-  whileTap={{ scale: 0.95 }}
-  className="group absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center focus:outline-none"
->
-  <div className="relative w-12 h-12 rounded-full flex items-center justify-center">
-    {/* Glow ring */}
-    <div className="absolute inset-0 bg-blue-500/20 blur-xl rounded-full animate-pulse" />
-    {/* Circle border */}
-    <div className="relative w-10 h-10 border-2 border-blue-500 rounded-full flex items-center justify-center">
-      <motion.div
-        animate={{ y: [0, 6, 0] }}
-        transition={{ repeat: Infinity, duration: 1.6, ease: "easeInOut" }}
-        className="text-blue-600 text-lg font-bold"
-      >
-        ↓
-      </motion.div>
-    </div>
-  </div>
-  <span className="mt-3 text-gray-600 text-sm group-hover:text-blue-600 transition-colors">
-    Scroll to explore
-  </span>
-</motion.button>
-
     </section>
   );
 };
