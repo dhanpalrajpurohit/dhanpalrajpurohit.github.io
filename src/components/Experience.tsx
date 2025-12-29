@@ -12,7 +12,7 @@ type ExperienceItem = {
 
 const experiences: ExperienceItem[] = [
   {
-    role: "Full Stack Engineer (Backend-Focused)",
+    role: "Full Stack Engineer",
     company: "LA NET Team Solution Pvt Ltd, Surat",
     duration: "Dec 2021 – Present",
     description: [
@@ -63,10 +63,10 @@ const ExperienceCard: React.FC<{ exp: ExperienceItem; index: number }> = ({
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.15 }}
       viewport={{ once: true }}
-      className="relative mb-10 sm:mb-16"
+      className="relative my-5 sm:my-8"
     >
       {/* Timeline dot */}
-      <div className="hidden sm:block absolute left-[5px] top-8 w-4 h-4 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 border-[3px] border-white shadow-lg" />
+      {/* <div className="hidden sm:block absolute left-[5px] top-8 w-4 h-4 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 border-[3px] border-white shadow-lg" /> */}
 
       <div className="ml-0 sm:ml-10 bg-white border border-gray-100 rounded-2xl p-6 sm:p-7 shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all duration-300">
         {/* Header */}
@@ -120,7 +120,7 @@ const Experience: React.FC = () => {
   return (
     <section
       id="experience"
-      className="py-20 bg-gradient-to-b from-white to-gray-50 relative"
+      className="py-10 bg-gradient-to-b from-white to-gray-50 relative"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
         <motion.h2
@@ -134,7 +134,7 @@ const Experience: React.FC = () => {
 
         <div className="relative sm:pl-12 md:pl-16">
           {/* Timeline line */}
-          <div className="hidden sm:block absolute left-4 sm:left-8 top-0 bottom-0 w-[2px] bg-gradient-to-b from-blue-400 via-blue-300 to-transparent rounded-full" />
+          {/* <div className="hidden sm:block absolute left-4 sm:left-8 top-0 bottom-0 w-[2px] bg-gradient-to-b from-blue-400 via-blue-300 to-transparent rounded-full" /> */}
 
           {experiences.map((exp, index) => (
             <ExperienceCard key={index} exp={exp} index={index} />

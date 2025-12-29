@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
 
   return (
     <section id="home" className="bg-[#f8fafc] text-gray-900 overflow-hidden">
-      <Container className="min-h-[85vh] flex items-center py-20">
+      <Container className="min-h-[100vh] flex items-center py-20">
 
         <div className="w-full flex flex-col-reverse md:flex-row items-center gap-14">
 
@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
             {/* SOCIAL */}
             <div className="flex gap-6 justify-center md:justify-start mb-10">
               <a
-                href="https://linkedin.com/in/YOUR-LINKEDIN"
+                href="https://www.linkedin.com/in/dhanpal-rajpurohit/"
                 target="_blank"
                 className="flex items-center gap-2 text-gray-600 hover:text-blue-600"
               >
@@ -69,7 +69,7 @@ const Hero: React.FC = () => {
               </a>
 
               <a
-                href="https://github.com/YOUR-GITHUB"
+                href="https://github.com/dhanpalrajpurohit"
                 target="_blank"
                 className="flex items-center gap-2 text-gray-600 hover:text-gray-900"
               >

@@ -43,7 +43,7 @@ const skills = [
 
 const Skills: React.FC = () => {
   return (
-    <section id="skills" className="py-24 bg-gray-50">
+    <section id="skills" className="py-10 bg-gray-50">
       <div className="max-w-6xl mx-auto px-8 text-center">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

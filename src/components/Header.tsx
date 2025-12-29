@@ -6,7 +6,7 @@ import Container from "./Container";
 const Header: React.FC = () => {
   const [open, setOpen] = useState(false);
 
-  const navItems = ["Home", "Experience", "Skills", "Projects", "Contact"];
+  const navItems = ["Home", "Experience", "Skills", "Projects", "Blogs", "Contact"];
 
   return (
     <header className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-100 z-50 shadow-sm">
